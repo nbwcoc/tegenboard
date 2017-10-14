@@ -13,11 +13,11 @@
 #include <QResizeEvent>
 #include <QKeyEvent>
 
-typedef struct _tile {
+struct tile {
     QRect rect;
     QColor color;
     QImage image;
-} tile;
+};
 
 class TegenBoard : public QFrame {
 private:
